@@ -1,0 +1,44 @@
+{
+  "name": "minimalist-webpack-boilerplate",
+  "sideEffects": [
+    "*.css"
+  ],
+  "version": "1.0.0",
+  "description": "Minimalist Webpack 5 Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --config webpack/webpack.config.dev.js",
+    "live": "webpack serve  --config webpack/webpack.config.dev.js",
+    "build": "webpack --config webpack/webpack.config.prod.js",
+    "build:analyzer": "webpack --config webpack/webpack.config.analyzer.js"
+  },
+  "author": "isladjan",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "postcss": "^8.4.21",
+    "postcss-loader": "^7.0.2",
+    "postcss-preset-env": "^8.0.1",
+    "webpack": "^5.75.0",
+    "webpack-bundle-analyzer": "^4.8.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0",
+    "webpackbar": "^5.0.2"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 0.5%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "gsap": "^3.11.4"
+  }
+}
